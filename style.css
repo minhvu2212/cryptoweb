@@ -1,0 +1,155 @@
+body::before {
+    content: '';
+    background-image: url('images/Welcome.png'); /* Thay 'ten-file-anh-nen.jpg' bằng tên thực của tệp ảnh nền của bạn */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(0px); /* Điều chỉnh độ mờ tại đây */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đảm bảo background mờ ở phía sau nội dung */
+}
+header {
+    background-color: rgba(0, 0, 0, 0.103); /* Màu nền với độ trong suốt */
+    padding: 10px; /* Tùy chỉnh padding nếu cần */
+}
+
+main {
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex; /* Sử dụng flexbox cho body */
+    flex-direction: column; /* Sắp xếp nội dung theo chiều dọc */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    justify-content: flex-start; /* Căn nội dung từ đầu trang */
+    min-height: 100vh; /* Đảm bảo body chiếm toàn bộ chiều cao của viewport */
+    color: rgb(255, 255, 255);
+}
+
+header {
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Padding đồng nhất cho header */
+    color: rgb(0, 0, 0);
+}
+
+.header-logo {
+    margin-right: 10px; /* Khoảng cách từ logo đến menu, có thể điều chỉnh */
+    flex-shrink: 0; /* Đảm bảo logo không co lại khi có sự thay đổi kích thước */
+}
+
+.header-logo img {
+    border-radius: 50%; /* Tạo hiệu ứng hình tròn hoàn hảo */
+    height: 100px; /* Kích thước logo */
+    width: auto;
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo khi bo tròn */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Điều chỉnh khoảng cách giữa các mục menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+#social-media {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    border-radius: 50%; /* Tạo hiệu ứng hình tròn hoàn hảo */
+
+    object-fit: cover; 
+    width: 40px;
+    height: 40px;
+}
+
+.buy-token-button {
+    
+        width: 500px; /* Đặt chiều rộng của ảnh */
+     height: auto; /* Để tỷ lệ chiều cao tự động theo chiều rộng */
+    
+      
+    display: inline-block; /* Hiển thị như một phần tử nội dòng */
+    cursor: pointer; /* Con trỏ chuột sẽ thay đổi khi rê chuột lên nút */
+    /* Thêm bất kỳ thuộc tính CSS khác nếu cần */
+}
+
+.buy-token-button:hover {
+    /* Thêm hiệu ứng khi rê chuột lên ảnh, ví dụ thay đổi độ sáng */
+    filter: brightness(90%);
+}
+
+
+footer {
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.partner-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partner-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.partner-item img {
+    width: 250px; /* Hoặc kích thước cố định nếu bạn muốn */
+    height: 150px;
+    border-radius: 10px; /* Nếu bạn muốn bo tròn các góc */
+    margin-bottom: 10px;
+}
+
+/* Thêm các định dạng CSS khác theo nhu cầu của bạn */
+.text-background {
+    background-color: rgba(0, 0, 0, 0.425); /* Màu trắng với độ trong suốt */
+    padding: 10px; /* Khoảng cách xung quanh văn bản */
+    border-radius: 8px; /* Viền bo tròn */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tạo bóng mờ nhẹ */
+    margin: 10px 0; /* Khoảng cách giữa các phần tử */
+}
+#buy-token {
+
+    position: relative; /* Đặt phần tử làm nền */
+    top: 100px; /* Điều chỉnh khoảng cách từ trên xuống */
+    left: 20px; /* Điều chỉnh khoảng cách từ trái sang phải */
+  }
+  
